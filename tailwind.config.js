@@ -13,6 +13,7 @@ module.exports = {
         'gray-300': '#D1D5DB',
         'gray-800': '#1F2937',
       },
+      
       maxWidth: {
         'container': '90%', // Limit maximum width for container-like elements
       },
