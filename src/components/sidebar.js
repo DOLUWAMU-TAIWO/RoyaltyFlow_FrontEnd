@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMusic, FiHome, FiUser, FiPieChart, FiBarChart, FiVideo, FiChevronRight, FiX } from 'react-icons/fi';  // <-- Updated icons
+import { FiMusic, FiHome, FiUser, FiPieChart, FiBarChart, FiVideo, FiChevronLeft, FiX } from 'react-icons/fi';  // <-- Updated icons
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <>
       {/* Mobile Toggle Button for Sidebar */}
       <button
-        className="lg:hidden fixed top-16 left-2 z-50 bg-blue-500 text-white p-1 rounded-full shadow-md"
+        className="lg:hidden fixed top-16 left-4 z-50 bg-blue-500 text-white p-1 rounded-full shadow-md"
         onClick={toggleSidebar}
       >
-        {isOpen ? <FiX size={18} /> : <FiChevronRight size={18} />}  {/* Updated icon to FiChevronRight, reduced size, adjusted position, and changed background color */}
+        {isOpen ? <FiX size={18} /> : <FiChevronLeft size={18} />}  {/* Updated icon to FiChevronLeft, reduced size, and adjusted position */}
       </button>
 
       <div
